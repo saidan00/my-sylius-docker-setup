@@ -50,7 +50,6 @@ sylius_attribute:
             attribute:
                 classes:
                     model: App\Entity\Product\ProductAttribute
-                    repository: App\Repository\ProductRepository
                 translation:
                     classes:
                         model: App\Entity\Product\ProductAttributeTranslation
@@ -145,7 +144,9 @@ sylius_product:
     resources:
         product:
             classes:
+                controller: App\Controller\ProductController
                 model: App\Entity\Product\Product
+                repository: App\Repository\ProductRepository
             translation:
                 classes:
                     model: App\Entity\Product\ProductTranslation

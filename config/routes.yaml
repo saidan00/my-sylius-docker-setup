@@ -15,3 +15,27 @@ app_shop_partial_product_index_by_on_hand:
         paginate: false
         limit: 100
 
+# sylius_admin_product_create_simple:
+#     path: /products/new/simple
+#     methods: [GET, POST]
+#     defaults:
+#         _controller: sylius.controller.product:createAction
+#         _sylius:
+#             section: admin
+#             factory:
+#                 method: createDisabled
+#             template: '@SyliusAdmin/Crud/create.html.twig'
+#             redirect: sylius_admin_product_update
+#             vars:
+#                 subheader: sylius.ui.manage_your_product_catalog
+#                 templates:
+#                     form: '@SyliusAdmin/Product/_form.html.twig'
+#                 route:
+#                     name: sylius_admin_product_create_simple
+
+app_product_show_index:
+    path: /product/show
+    methods: [GET]
+    defaults:
+        _controller: sylius.controller.product::showAction
+        
