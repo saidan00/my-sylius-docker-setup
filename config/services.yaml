@@ -52,3 +52,8 @@ services:
 
     App\Controller\ProductController:
         autowire: false
+
+    sylius.controller.shop.homepage:
+        class: App\Controller\Shop\HomepageController
+        autowire: true
+        tags: ['controller.service_arguments']

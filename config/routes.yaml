@@ -39,3 +39,9 @@ app_product_show_index:
     defaults:
         _controller: sylius.controller.product::showAction
         
+app_shop_custom_action:
+    path: /custom
+    methods: [GET]
+    defaults:
+        _controller: sylius.controller.shop.homepage::customAction
+        
