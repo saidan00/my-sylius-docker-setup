@@ -50,6 +50,7 @@ sylius_attribute:
             attribute:
                 classes:
                     model: App\Entity\Product\ProductAttribute
+                    repository: App\Repository\ProductRepository
                 translation:
                     classes:
                         model: App\Entity\Product\ProductAttributeTranslation
