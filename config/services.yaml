@@ -89,3 +89,7 @@ services:
         class: App\Menu\AdminProductVariantFormMenuListener
         tags:
             - { name: kernel.event_listener, event: sylius.menu.admin.product_variant.form, method: addItems }
+            
+    App\Grid\AdminProductsGridListener:
+        tags:
+            - { name: kernel.event_listener, event: sylius.grid.admin_product, method: editFields }
